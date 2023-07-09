@@ -141,24 +141,25 @@ body section.container h3 {
     font-size: 0.95rem;
     margin-top: 22px;
   }
-  body section.container section.newsletter {
+  body section.container section.newsletter form {
     flex-direction: column;
   }
   body section.container section.newsletter input {
-    margin-bottom: 10px;
+    min-height: 50px;
+    max-height: 50px;
+    margin-bottom: 12px;
   }
   body section.container section.newsletter button {
-    padding: 15px 0;
+    min-height: 50px;
+    max-height: 50px;
   }
   body section.container img.dashboard {
     width: 100%;
   }
   body section.container section.socials {
-    margin-top: 40px;
+    margin-top: 90px;
   }
   body section.container h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
-```
-```
