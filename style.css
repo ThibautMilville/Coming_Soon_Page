@@ -39,7 +39,7 @@ body section.container h1 {
   color: var(--gray);
   margin-top: 30px;
 }
-body section.container span {
+body section.container h1 span {
   font: 600 2.8rem 'Libre Franklin', sans-serif;
   color: var(--very-dark-blue);
 }
@@ -55,9 +55,14 @@ body section.container section.newsletter {
 body section.container section.newsletter form {
   display: flex;
 }
-body section.container section.newsletter input {
+body section.container section.newsletter div {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   flex-basis: 0;
+}
+body section.container section.newsletter input {
+  font: 300 1.0rem 'Libre Franklin', sans-serif;
   padding: 10px 18px;
   margin-right: 10px;
   border: 1px solid rgba(128, 128, 128, 0.5);
@@ -67,9 +72,18 @@ body section.container section.newsletter input::placeholder {
   color: rgba(128, 128, 128, 0.5);
 }
 body section.container section.newsletter input:focus {
-  outline: 1px solid var(--pale-blue);
+  outline: none;
+  border: 1px solid var(--pale-blue);
+}
+body section.container section.newsletter div span {
+  font: italic 0.75rem 'Libre Franklin', sans-serif;
+  margin: 7px 0 0 18px;
 }
 body section.container section.newsletter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 41px;
   background-color: var(--blue);
   color: white;
   font: 600 0.9rem 'Libre Franklin', sans-serif;
@@ -130,7 +144,7 @@ body section.container h3 {
   body section.container {
     width: 100%;
     margin: 100px 0 0 0;
-    padding: 0 10%;
+    padding: 0 6%;
   }
   body section.container h1, body section.container span {
     text-align: center;
@@ -143,11 +157,15 @@ body section.container h3 {
   }
   body section.container section.newsletter form {
     flex-direction: column;
+    margin: 0 6%;
   }
   body section.container section.newsletter input {
     min-height: 50px;
     max-height: 50px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+  }
+  body section.container section.newsletter div span {
+    margin: 0 0 25px 0;
   }
   body section.container section.newsletter button {
     min-height: 50px;
@@ -155,9 +173,10 @@ body section.container h3 {
   }
   body section.container img.dashboard {
     width: 100%;
+    margin-top:20px;
   }
   body section.container section.socials {
-    margin-top: 90px;
+    margin-top: 70px;
   }
   body section.container h3 {
     font-size: 0.8rem;
